@@ -7,3 +7,8 @@ including an entry such as:
 
 And add the user defined field labels that you are using (defined in the common/locales/en.yml or frontend/config/locales/en.yml) for resources and accessions in frontend/assets/manage_user_defined_fields.js (arrays defined as RESOURCE_UDFS and ACCESSION_UDFS accordingly).
 
+NOTE:
+
+If you're using a path prefix, be sure to include the prefix in the
+layout_head.html.erb (line 5).
+
