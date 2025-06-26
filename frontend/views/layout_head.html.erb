@@ -1,4 +1,4 @@
-<% if controller.controller_name == 'accessions' || controller.controller_name == 'resources' %>
+<% if controller.controller_name == 'accessions' || controller.controller_name == 'digital_objects' || controller.controller_name == 'resources' %>
 	<%= javascript_tag  do %>
 		TYPE = "<%= controller.controller_name.singularize %>"
 	<% end %>

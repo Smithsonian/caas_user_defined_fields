@@ -31,21 +31,14 @@ $(function () {
 	];
 	ACCESSION_UDFS = [
 		'boolean_1',
-		'boolean_2',
-		'boolean_3',
+		'date_1',
+		'enum_1',
 		'string_1'
 	];
 
-	RESOURCE_UDFS = [
-	  'string_2',
-	  'string_3',
-		'boolean_1',
-		'boolean_2',
-		'boolean_3',
-		'text_1',
-		'text_2'
+	DIGITAL_OBJECT_UDFS = [
+	  	'string_4'
 	];
-
 
   // LOOP THRU FIELDS AND HIDE THEM
 
@@ -59,7 +52,7 @@ $(function () {
 					var control_parent = $(field_id).parent().parent();
 					control_parent = ( ($($(field_id).parent().parent().children('label')[0]).length > 0) ? control_parent : control_parent.parent() );
 
-					var custom_udfs = ( (TYPE == 'accession') ? ACCESSION_UDFS : (TYPE=='resource') ? RESOURCE_UDFS : []);
+					var custom_udfs = ( (TYPE == 'accession') ? ACCESSION_UDFS : ((TYPE=='digital_object') ? DIGITAL_OBJECT_UDFS : []));
 
 					if( $($(control_parent).children('label')[0]).html() == value || custom_udfs.indexOf(key) == -1){
 						$(control_parent).hide();
@@ -70,7 +63,7 @@ $(function () {
 	}
 
 
-  // HIDE FIELDS WHEN PAGE LOADS
+    // HIDE FIELDS WHEN PAGE LOADS
 
 	if( $('#'+TYPE+'_user_defined_').children('div').children('ul').children().length > 0){
 		hideUserDefinedFields();
@@ -81,7 +74,7 @@ $(function () {
   // CLICKED. IF IT HAS, LET THE HIDING BEGIN!
   // AFTER A SMALL TIMEOUT, OF COURSE.
 
-	$('.btn.btn-small.pull-right').mouseup(function(){
+	$('.btn.btn-sm.btn-default.ml-auto.mr-36px').on('mouseup', function() {
 		if($(this).html() == "Add User Defined Fields"){
 			setTimeout(function() {
 				hideUserDefinedFields();
@@ -99,7 +92,7 @@ $(function () {
       hideUserDefinedFields();
     }
 
-    $('.btn.btn-small.pull-right').last().on('click', function() {
+    $('.btn.btn-sm.btn-default.ml-auto.mr-36px').last().on('click', function() {
       setTimeout(function() {
         hideUserDefinedFields();
       }, 100);

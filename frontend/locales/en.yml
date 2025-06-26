@@ -1,0 +1,23 @@
+en:
+  digital_object:
+    user_defined:
+      string_4: DO Import RefID
+      string_4_tooltip: |
+          <p>Reserved for DO import linking.</p>
+          <p>During import, provide the EAD Ref ID of an associated record for automated linking.</p>
+  accession:
+    user_defined:
+      boolean_1: Electronic Media?
+      boolean_1_tooltip: |
+        <p>Does the accession contain electronic media?</p>
+      string_1: Museum Accession ID
+      string_1_inline_help: e.g. NMAH Acc.2018-9999
+      string_1_tooltip: |
+          <p>Enter details from local museum system, such as XG, EMu</p>
+      date_1: Arrival Date
+      date_1_tooltip: |
+          <p>Enter the date that this accession arrived?</p>
+      date_1_inline_help: e.g. YYYY-MM-DD
+      enum_1: New or Addition?
+      enum_1_tooltip: |
+          <p>Is this accession new or an accrual/addition?</p>

@@ -3,7 +3,7 @@ This plugin hides any user defined fields that are default or not used for the s
 To install, just activate the plugin in your config/config.rb file by
 including an entry such as:
 
-     AppConfig[:plugins] = ['manage_user_defined_fields']
+     AppConfig[:plugins] = ['user_defined_fields']
 
 And add the user defined field labels that you are using (defined in the common/locales/en.yml or frontend/config/locales/en.yml) for resources and accessions in frontend/assets/manage_user_defined_fields.js (arrays defined as RESOURCE_UDFS and ACCESSION_UDFS accordingly).
 
