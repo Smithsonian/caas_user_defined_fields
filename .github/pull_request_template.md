@@ -15,6 +15,7 @@
 - [ ] ✔️ Have you assigned at least one reviewer?
 - [ ] 🔗 Have you referenced any issues this PR will close?
 - [ ] ⬇️ Have you merged the latest upstream changes into your branch? 
+- [ ] 🔢 If you have modified `manage_user_defined_fields.js`, have you bumped the version in `layout_head.html.erb`?
 - [ ] 🧪 Have you added tests to cover these changes?  If not, why:
 
 - [ ] 🤖 Have automated checks (if any) passed?  If not, please explain for the reviewer:
