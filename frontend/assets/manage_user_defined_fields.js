@@ -32,6 +32,7 @@ $(function () {
 	ACCESSION_UDFS = [
 		'boolean_1',
 		'date_1',
+		'date_2',
 		'enum_1',
 		'string_1'
 	];

@@ -18,6 +18,10 @@ en:
       date_1_tooltip: |
           <p>Enter the date that this accession arrived?</p>
       date_1_inline_help: e.g. YYYY-MM-DD
+      date_2: Agreement Date
+      date_2_tooltip: |
+        <p>Enter the agreement date for the accession</p>
+      date_2_inline_help: e.g. YYYY-MM-DD
       enum_1: New or Addition?
       enum_1_tooltip: |
           <p>Is this accession new or an accrual/addition?</p>
